@@ -83,6 +83,14 @@ const config = {
 				source: '/api/analytics',
 				destination: `${HASHNODE_ADVANCED_ANALYTICS_URL}/api/analytics`,
 			},
+			{
+				source: "/blog",
+				destination: "https://blog-jwj7fyo1z-nabu.vercel.app/blog",
+			  },
+			  {
+				source: "/blog/:path*",
+				destination: "https://blog-jwj7fyo1z-nabu.vercel.app/blog/:path*",
+			  },
 		];
 	},
 	async redirects() {
